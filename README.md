@@ -7,4 +7,4 @@ Dependencies are Stock Volumetric Clouds V5 and it's dependencies.
 
 Made by ArgentGamer
 
-MIT License
+CC BY-NC-SA 4.0 License
