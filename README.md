@@ -8,5 +8,3 @@ Dependencies are Stock Volumetric Clouds V5 and it's dependencies.
 Made by ArgentGamer
 
 Code: MIT License
-Textures: Non Commercial License
-
