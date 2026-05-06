@@ -13,4 +13,3 @@ Highly recommended to get Outer Parallax or any other Parallax config for Outer 
 Made by ArgentGamer
 
 CC BY-NC-SA 4.0 License
-
