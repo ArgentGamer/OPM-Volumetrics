@@ -6,7 +6,7 @@ The source does not include the textures because of the file size limit, but the
 
 Dependencies are Stock Volumetric Clouds V5 and its dependencies.
 
-Do not install any other mods that add Scatterer and EVE configs to the Outer Planets mod, such as Pood's OPM-VO; otherwise, there will be a conflict.
+Do not install any other mods that add Scatterer and EVE configs to the Outer Planets mod, such as Pood's OPM-VO or Astronomer's Visual Pack; otherwise, there will be a conflict.
 
 Highly recommended to get Outer Parallax or any other Parallax config for Outer Planets Mod. Will require Parallax or Parallax Continued to be installed.
 
