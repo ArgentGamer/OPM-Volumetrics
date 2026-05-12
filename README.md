@@ -10,6 +10,6 @@ Do not install any other mods that add Scatterer and EVE configs to the Outer Pl
 
 Highly recommended to get Outer Parallax or any other Parallax config for Outer Planets Mod. Will require Parallax or Parallax Continued to be installed.
 
-Made by ArgentGamer
+Made by ArgentGamer and jonasfdb
 
-CC BY-NC-SA 4.0 License
+-# OPM-Volumetrics © 2025 by ArgentGamer, jonasfdb is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/ 
