@@ -2,7 +2,7 @@
 
 Volumetric Clouds for Outer Planets Mod in Kerbal Space Program.
 
-The source does not include the textures because of the file size limit, but the releases will have them. Please download the releases.
+As of v0.5.0, the source is completely functional on its own. However, it includes both versions. You should still download the releases as that will allow you to save some downloading.
 
 Dependencies are Stock Volumetric Clouds V5 and its dependencies.
 
