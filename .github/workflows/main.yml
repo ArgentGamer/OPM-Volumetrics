@@ -1,0 +1,61 @@
+# OPM Volumetrics Draft Release Generator
+# Version format must always be v0.0.0
+
+name: OPM Volumetrics Draft Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      custom_version:
+        description: 'Force a specific version'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Determining the version number
+        id: versioning
+        run: |
+          if [ "${{ github.event.inputs.custom_version }}" != "" ]; then
+            echo "TAG_NAME=${{ github.event.inputs.custom_version }}" >> $GITHUB_ENV
+          else
+            LATEST_TAG=$(git tag -l --sort=-v:refname | head -n 1)
+            CLEAN_TAG=${LATEST_TAG#v}
+            IFS='.' read -r major minor patch <<< "$CLEAN_TAG"
+            NEXT_PATCH=$((patch + 1))
+            echo "TAG_NAME=v$major.$minor.$NEXT_PATCH" >> $GITHUB_ENV
+          fi
+
+      - name: Zipping V5 GameData
+        run: |
+          cd V5
+          zip -r ../OPM_Volumetrics_V5.zip GameData
+
+      - name: Zipping V3 GameData
+        run: |
+          cd V3
+          zip -r ../OPM_Volumetrics_V3.zip GameData
+
+      - name: Creating the draft release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          append_body: false
+          generate_release_notes: false
+          draft: true
+          name: OPM Volumetrics ${{ env.TAG_NAME }}
+          body: |
+            ## Changelog
+          files: |
+            OPM_Volumetrics_V5.zip
+            OPM_Volumetrics_V3.zip
