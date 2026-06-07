@@ -4,7 +4,7 @@ Volumetric Clouds for Outer Planets Mod in Kerbal Space Program.
 
 As of v0.5.0, the source is completely functional on its own. However, it includes both versions. You should still download the releases as that will allow you to save some downloading.
 
-Dependencies are Stock Volumetric Clouds V5 or V3 and their dependencies.
+Dependencies are True volumetric clouds release 5 or release 3 and their dependencies.
 
 Do not install any other mods that add Scatterer and EVE configs to the Outer Planets mod, such as Pood's OPM-VO or Astronomer's Visual Pack; otherwise, there will be a conflict.
 
